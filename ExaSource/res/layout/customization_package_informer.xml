@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cpi_root_view" android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff000000" android:id="@id/cpi_text_view" android:background="@drawable/title_bar_background" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cpi_header_label" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffe0e0e0" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/cpi_run_trial_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:gravity="center|left" android:id="@id/cpi_run_trial_button" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cpi_run_trial_button_label" android:drawableLeft="@drawable/launch" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:onClick="onRunTrialButtonClicked" style="?android:borderlessButtonStyle" />
+                <Button android:tag="run_trial" android:layout_width="45.0dip" android:layout_height="fill_parent" android:drawableRight="@drawable/cpi_info" android:onClick="onInfoButtonClicked" style="?android:borderlessButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:gravity="center|left" android:id="@id/cpi_buy_cp_button" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cpi_buy_lifetime_button_label" android:drawableLeft="@drawable/buy_inf" android:drawablePadding="10.0dip" android:onClick="onBuyLifetimeButtonClicked" style="?android:borderlessButtonStyle" />
+                    <ImageView android:id="@id/cpi_buy_cp_promo_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignBottom="@id/cpi_buy_cp_button" android:layout_alignParentBottom="false" />
+                </RelativeLayout>
+                <Button android:tag="buy_lifetime" android:layout_width="45.0dip" android:layout_height="fill_parent" android:drawableRight="@drawable/cpi_info" android:onClick="onInfoButtonClicked" style="?android:borderlessButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cpi_buy_subscription_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <Button android:gravity="center|left" android:id="@id/cpi_buy_subscription_button" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cpi_buy_subscription_button_label" android:drawableLeft="@drawable/buy_lim" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:onClick="onBuySubscriptionButtonClicked" style="?android:borderlessButtonStyle" />
+                <Button android:tag="buy_subscription" android:layout_width="45.0dip" android:layout_height="fill_parent" android:drawableRight="@drawable/cpi_info" android:onClick="onInfoButtonClicked" style="?android:borderlessButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

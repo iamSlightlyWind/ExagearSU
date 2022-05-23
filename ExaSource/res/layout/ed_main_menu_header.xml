@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/primary_light" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/logo" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ExaGear ludashi " />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/ic_launcher" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/primary_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VirGL Overlay " />
+    <Button android:id="@id/clean_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clean_text" android:layout_weight="0.5" android:onClick="onClickClean" />
+    <Button android:id="@id/start_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/start_text" android:layout_weight="0.5" android:onClick="onClickStart" />
+</LinearLayout>
