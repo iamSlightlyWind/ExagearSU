@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@id/container_run_explorer" android:title="启动" />
-    <item android:id="@id/container_install_package" android:title="扩展包" />
-    <item android:id="@id/container_properties" android:title="设置" />
-    <item android:id="@id/container_clone" android:title="克隆" />
-    <item android:id="@id/container_delete" android:title="删除" />
-</menu>
