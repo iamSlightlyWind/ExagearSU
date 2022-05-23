@@ -17,18 +17,20 @@ jobs:
           sudo apt-get install aapt android-framework-res android-libaapt android-libandroidfw android-libbacktrace android-libbase android-libcutils android-liblog android-libunwind android-libutils android-libziparchive apktool junit libantlr-java libantlr3-runtime-java libapache-pom-java libatinject-jsr330-api-java libcommons-cli-java libcommons-io-java libcommons-lang3-java libcommons-parent-java libguava-java libjsr305-java libprotobuf-lite17 libsmali-java libstringtemplate-java libxmlunit-java libxpp3-java libyaml-snake-java -y
           sudo cp apk* /usr/local/bin/
 
-#      - name: Build Apk
-#        run: apktool b ExaSource
+      - name: Build Apk
+        run: apktool b ExaSource
 
-      - name: Debug with SSH
-        uses: iamSlightlyWind/ssh-server-action@v1
-        with:
-          ngrok-authtoken: "1uPm1SyJG3xrEcXvnXqQjFevx1O_5ExNcT6ibyJJrTGHZmtoA"
-          ssh-public-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPcdw+kXvwnBQQu1LR4whI233bzo6b+EHb/ZdV9eIqOe iamSlightlyWind@themajorones.dev"
+      - name: Get apk file name
+        run: tree Exasource/dist/
+
+#      - name: Debug with SSH
+#        uses: iamSlightlyWind/ssh-server-action@v1
+#        with:
+#          ngrok-authtoken: "1uPm1SyJG3xrEcXvnXqQjFevx1O_5ExNcT6ibyJJrTGHZmtoA"
+#          ssh-public-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPcdw+kXvwnBQQu1LR4whI233bzo6b+EHb/ZdV9eIqOe iamSlightlyWind@themajorones.dev"
 
 #      - name: Sign apk with dummy key
 #        run: jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore dummy-key.keystore ExaSource/dist/wine7.apk dummy < dummykey
-
 
 #      - name: Upload a Build Artifact
 #        uses: actions/upload-artifact@v3.0.0
