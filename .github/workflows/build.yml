@@ -20,20 +20,17 @@ jobs:
       - name: Build Apk
         run: apktool b ExaSource
 
-      - name: Get apk file name
-        run: ls ExaSource/dist/
-
 #      - name: Debug with SSH
 #        uses: iamSlightlyWind/ssh-server-action@v1
 #        with:
 #          ngrok-authtoken: "1uPm1SyJG3xrEcXvnXqQjFevx1O_5ExNcT6ibyJJrTGHZmtoA"
 #          ssh-public-key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPcdw+kXvwnBQQu1LR4whI233bzo6b+EHb/ZdV9eIqOe iamSlightlyWind@themajorones.dev"
 
-#      - name: Sign apk with dummy key
-#        run: jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore dummy-key.keystore ExaSource/dist/wine7.apk dummy < dummykey
+      - name: Sign apk with dummy key
+        run: jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore dummy-key.keystore ExaSource/dist/ExaSource.apk dummy < dummykey
 
-#      - name: Upload a Build Artifact
-#        uses: actions/upload-artifact@v3.0.0
-#        with:
-#          name: ExaSource
-#          path: ExaSource/dist/wine7.apk
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.0.0
+        with:
+          name: ExaSource
+          path: ExaSource/dist/ExaSource.apk
