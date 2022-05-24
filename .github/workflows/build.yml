@@ -21,7 +21,7 @@ jobs:
         run: apktool b ExaSource
 
       - name: Get apk file name
-        run: ls Exasource/dist/
+        run: ls ExaSource/dist/
 
 #      - name: Debug with SSH
 #        uses: iamSlightlyWind/ssh-server-action@v1
