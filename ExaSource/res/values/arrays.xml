@@ -58,18 +58,22 @@
     </string-array>
     <string-array name="cont_pref_screen_size_entries">
         <item>Default</item>
+        <item>1280,800</item>
         <item>1600,1000</item>
         <item>1920,1200</item>
         <item>2560,1600</item>
+        <item>800,1280</item>
         <item>1000,1600</item>
         <item>1200,1920</item>
         <item>1600,2560</item>
     </string-array>
     <string-array name="cont_pref_screen_size_values">
         <item>Default</item>
+        <item>1280,800</item>
         <item>1600,1000</item>
         <item>1920,1200</item>
         <item>2560,1600</item>
+        <item>800,1280</item>
         <item>1000,1600</item>
         <item>1200,1920</item>
         <item>1600,2560</item>
