@@ -58,14 +58,17 @@
     </string-array>
     <string-array name="cont_pref_screen_size_entries">
         <item>Default</item>
-        <item>1280,800</item>
-        <item>1600,1000</item>
-        <item>1920,1200</item>
-        <item>2560,1600</item>
-        <item>800,1280</item>
-        <item>1000,1600</item>
-        <item>1200,1920</item>
-        <item>1600,2560</item>
+        <item>(16:10) 1280x800</item>
+        <item>(16:10) 1600x1000</item>
+        <item>(16:10) 1920x1200</item>
+        <item>(16:10) 2560x1600</item>
+        <item>(10:16) 800x1280</item>
+        <item>(10:16) 1000x1600</item>
+        <item>(10:16) 1200x1920</item>
+        <item>(10:16) 1600x2560</item>
+        <item>(16: 9) 1920x1080</item>
+        <item>(16: 9) 1600x900</item>
+        <item>(16: 9) 1280x720</item>
     </string-array>
     <string-array name="cont_pref_screen_size_values">
         <item>Default</item>
@@ -77,6 +80,9 @@
         <item>1000,1600</item>
         <item>1200,1920</item>
         <item>1600,2560</item>
+        <item>1920,1080</item>
+        <item>1600,900</item>
+        <item>1280,720</item>
     </string-array>
     <string-array name="cont_pref_renderer_entries">
         <item>Software</item>
